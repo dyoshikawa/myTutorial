@@ -7,5 +7,5 @@ from django.utils import timezone
 
 #songs
 def index(request):
-    return render(request, 'templates/songs/index.html')
+    return render(request, 'songs/index.html')
     #return HttpResponse("Hello, world. You're at the songs index.")
