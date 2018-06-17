@@ -5,5 +5,5 @@ import songs.views
 
 app_name = 'songs'
 urlpatterns = [
-    path('', songs.views.index, name='index'),
+    path('/', songs.views.index, name='index'),
 ]
