@@ -50,6 +50,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'songs.urls'
 
+TEMPLATE_DIRS = (
+    os.path.join('songs', 'templates'),
+)
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
