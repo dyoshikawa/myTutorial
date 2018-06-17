@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'songs/style.css' %}" />
+    <script type="text/javascript" src='{% static 'songs/brython.js' %}'></script>
+    <script type="text/javascript" src='{% static 'songs/brython_stdlib.js' %}'></script>
+
+
+    <title>暗号を作ろうぜ</title>
+  </head>
+
+  <body onload="brython()">
+    <script type="text/python" src='{% static 'songs/makePass.py' %}'></script>
+
+    <h1>Hash関数を体験する</h1>
+
+    <p>好きな文字列を入力してね！</p>
+    <input type="text" id="hoge" />
+
+    <button id="execute">暗号化！</button>
+
+    <p><div id="result"></div></p>
+
+  </body>
+</html>
